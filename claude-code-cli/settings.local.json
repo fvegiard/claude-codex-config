@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s https://pypi.org/pypi/kanban-mcp/json)",
+      "Bash(curl -s https://api.github.com/repos/PromtEngineer/localGPT)"
+    ]
+  },
+  "outputStyle": "Concise"
+}

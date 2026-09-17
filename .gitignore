@@ -1,0 +1,14 @@
+# Sensitive data
+*.credentials
+*.env
+.secrets
+
+# Temporary files
+*.tmp
+*.backup
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
