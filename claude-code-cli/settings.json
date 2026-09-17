@@ -1,10 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "env": {},
   "permissions": {
-    "defaultMode": "bypassPermissions"
+    "defaultMode": "bypassPermissions",
+    "deny": ["AskUserQuestion"]
   },
-  "model": "claude-opus-5",
+  "model": "sonnet",
   "enabledPlugins": {
     "codex@openai-codex": true
   },
@@ -16,22 +16,20 @@
       }
     }
   },
+  "outputStyle": "Concise",
+  "modelSettings": {
+    "claude-fable-5-1": {
+      "effortLevel": "high"
+    }
+  },
   "advisorModel": "claude-fable-5-1",
   "askUserQuestionTimeout": "60s",
+  "autoUpdatesChannel": "latest",
   "tui": "fullscreen",
   "timeFormat": "24-hour",
   "skipDangerousModePermissionPrompt": true,
   "verbose": true,
   "remoteControlAtStartup": true,
   "inputNeededNotifEnabled": true,
-  "agentPushNotifEnabled": true,
-  "modelSettings": {
-    "claude-opus-5": {
-      "effortLevel": "high"
-    },
-    "claude-fable-5-1": {
-      "effortLevel": "high"
-    }
-  },
-  "outputStyle": "Concise"
+  "agentPushNotifEnabled": true
 }
