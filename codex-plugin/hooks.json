@@ -1,5 +1,5 @@
 {
-  "description": "Optional stop-time review gate for Codex Companion.",
+  "description": "Codex Companion configuration - work in place on system without temp repos",
   "hooks": {
     "SessionStart": [
       {
@@ -7,7 +7,12 @@
           {
             "type": "command",
             "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/session-lifecycle-hook.mjs\" SessionStart",
-            "timeout": 5
+            "timeout": 5,
+            "env": {
+              "CODEX_WORK_IN_PLACE": "true",
+              "CODEX_NO_TEMP_REPOS": "true",
+              "CODEX_INLINE_ANALYSIS": "true"
+            }
           }
         ]
       }
@@ -18,7 +23,11 @@
           {
             "type": "command",
             "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/session-lifecycle-hook.mjs\" SessionEnd",
-            "timeout": 5
+            "timeout": 5,
+            "env": {
+              "CODEX_WORK_IN_PLACE": "true",
+              "CODEX_NO_TEMP_REPOS": "true"
+            }
           }
         ]
       }
@@ -29,7 +38,11 @@
           {
             "type": "command",
             "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/stop-review-gate-hook.mjs\"",
-            "timeout": 900
+            "timeout": 900,
+            "env": {
+              "CODEX_WORK_IN_PLACE": "true",
+              "CODEX_CLEANUP_TEMP_REPOS": "true"
+            }
           }
         ]
       }
