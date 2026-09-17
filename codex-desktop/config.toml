@@ -1,0 +1,334 @@
+# oh-my-codex top-level settings (must be before any [table])
+model_reasoning_effort = "low"
+developer_instructions = "You have oh-my-codex installed. AGENTS.md is the orchestration brain and main control surface. Follow AGENTS.md for skill/keyword routing, $name workflow invocation, and role-specialized subagents; when the native surface exposes `agent_type` role routing, set `agent_type` to an installed role and never omit it for OMX work. When it reports `role_routing_unavailable` and adapted Ralplan authority is requested, do not fabricate `agent_type`; run `omx ralplan preflight --json` and stop on `unsupported_documented_leader_proof`. Ordinary work remains under its own workflow gates. Never fake the role via a prompt label or infer authority from session/thread/pointer/transcript/cwd state. Use outcome-first, concise progress updates: state the target result, constraints, validation evidence, and stop condition before adding process detail. Native subagents live in .codex/agents and may handle independent parallel subtasks within one Codex session or team pane. Skills load from .codex/skills, not native-agent TOMLs. Treat installed prompts as narrower execution surfaces under AGENTS.md authority. Before any Windows/system scripting, read and follow C:/Users/fvegi/Documents/kimi/tasks/2026-09-17/07-25-20-5a55ed8f/windows-scripting-playbook.md before executing commands."
+model = "gpt-6-astra"
+approval_policy = "never"
+sandbox_mode = "danger-full-access"
+model_verbosity = "low"
+model_reasoning_summary = "concise"
+service_tier = "default"
+notify = [ "C:\\Users\\fvegi\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\fcf5d08964516500\\bin\\node_modules\\@oai\\sky\\bin\\windows\\codex-computer-use.exe", "turn-ended", "--previous-notify", "[\"node\",\"C:\\\\Users\\\\fvegi\\\\AppData\\\\Local\\\\mise\\\\installs\\\\node\\\\26.8.2\\\\node_modules\\\\oh-my-codex\\\\dist\\\\scripts\\\\notify-dispatcher.js\",\"--metadata\",\"C:\\\\Users\\\\fvegi\\\\.codex\\\\.omx\\\\notify-dispatch.json\"]" ]
+# Windows scripting rules: full playbook must be read before any Windows/system scripting.
+# Absolute paths for powershell/pwsh/reg/cmd; elevation checks; backup before mutation;
+# DISM before SFC with exit codes; UTF-8 BOM + CRLF for .ps1; $LASTEXITCODE capture; WSL cautions.
+
+[projects.'c:\users\fvegi']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\.codex\zed-playwright-mcp']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\ana']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\.codex']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\sea']
+trust_level = "trusted"
+
+[projects.'d:\claude']
+trust_level = "trusted"
+
+[projects.'d:\']
+trust_level = "trusted"
+
+[projects.'c:\tmp']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\i-sold-out-of-these-3']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\are-x20']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\make']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\ma']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\make-gemini-in-note-book-to']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\make-gemini-in-note-book-to-2']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\wah']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\opemn']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\open-my-gmail-and-in']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\open-my-gmail-and-in-2']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\open-my-gmail-and-in-3']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\open-my-gmail-and-in-4']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\open-my-gmail-and-in-5']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\open-my-gmail-and-in-6']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\open-my-gmail-and-in-7']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\open-my-gmail-and-in-8']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\open-my-gmail-and-in-9']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\open-my-gmail-and-in-10']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\open-my-gmail-and-in-11']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\open-my-gmail-and-in-12']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\wich-work-space-i-have-free']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\wich-work-space-i-have-free-2']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\wich-work-space-i-have-free-3']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\wich-work-space-i-have-free-4']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\documents\codex\2026-09-15\loc']
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\.codex\github\oh-my-codex']
+trust_level = "trusted"
+
+[projects."/mnt/c/Users/fvegi/Documents/Codex/2026-09-16/if-codex-apps-was-using-pwsh7"]
+trust_level = "trusted"
+
+[projects."/mnt/c/Users/fvegi/Documents/Codex/2026-09-16/rein"]
+trust_level = "trusted"
+
+[projects.'c:\users\fvegi\.codex\2026-09-17\read']
+trust_level = "trusted"
+
+[projects."C:\\Users\\fvegi\\.gobby"]
+trust_level = "trusted"
+
+[projects.'c:\tmp\gobby-smoke']
+trust_level = "trusted"
+[tui.model_availability_nux]
+gpt-6-astra = 4
+
+[windows]
+sandbox = "elevated"
+
+[mcp_servers.cua-driver]
+command = "C:/Users/fvegi/.codex/cua-driver/0.28.1/cua-driver.exe"
+args = ["mcp"]
+
+[mcp_servers.node_repl]
+args = []
+command = 'C:\Users\fvegi\AppData\Local\OpenAI\Codex\runtimes\cua_node\fcf5d08964516500\bin\node_repl.exe'
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = 'C:\Users\fvegi\AppData\Local\OpenAI\Codex\runtimes\cua_node\fcf5d08964516500\bin\node_modules'
+NODE_REPL_NODE_PATH = 'C:\Users\fvegi\AppData\Local\OpenAI\Codex\runtimes\cua_node\fcf5d08964516500\bin\node.exe'
+NODE_REPL_TRUSTED_CODE_PATHS = 'C:\Users\fvegi\.codex;C:\Users\fvegi\AppData\Local\OpenAI\Codex\runtimes\cua_node\fcf5d08964516500\bin\node_modules'
+CODEX_HOME = 'C:\Users\fvegi\.codex'
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+BROWSER_USE_TINYSKY_ENABLED = "1"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = ""
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = ""
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.911.61220"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"C:/Users/fvegi/.codex/plugins/cache/openai-bundled/browser/26.911.61220/scripts/browser-service.mjs","sky":"@oai/sky/service"}'
+SKY_CUA_NATIVE_PIPE = "1"
+SKY_CUA_NATIVE_PIPE_DIRECTORY = '\\.\pipe\codex-computer-use-c8904c57-074e-4e98-8706-54a4a85b1039'
+CODEX_CLI_PATH = 'C:\Users\fvegi\AppData\Local\OpenAI\Codex\bin\eab8377aebac6c07\codex.exe'
+
+[mcp_servers.everything]
+command = "C:/Users/fvegi/AppData/Local/OmniLocal/everything/venv/Scripts/everything-mcp.exe"
+
+[mcp_servers.victorialogs]
+command = "D:/claude/mcp-victorialogs/bin/mcp-victorialogs.exe"
+
+[mcp_servers.victorialogs.env]
+MCP_SERVER_MODE = "stdio"
+VL_INSTANCE_ENTRYPOINT = "http://127.0.0.1:9428"
+
+[mcp_servers.qdrant]
+command = 'C:\Users\fvegi\AppData\Local\mise\shims\uvx.exe'
+args = ["mcp-server-qdrant"]
+startup_timeout_sec = 120
+
+[mcp_servers.qdrant.env]
+QDRANT_URL = "http://127.0.0.1:6333"
+COLLECTION_NAME = "codex-memories"
+
+[features]
+multi_agent_v2 = true
+plugins = true
+memories = true
+
+hooks = true
+goals = true
+[desktop]
+followUpQueueMode = "steer"
+git-worktree-root = 'C:\Users\fvegi\.codex\worktrees'
+worktree-upstream-refresh-mode = "best-effort"
+git-pr-watch-auto-merge = true
+selected-avatar-id = "stacky"
+show-context-window-usage = true
+runCodexInWindowsSubsystemForLinux = false
+conversationDetailMode = "STEPS_PROSE"
+open-link-in-target-preference = "external-browser"
+open-local-url-in-target-preference = "external-browser"
+browser-show-full-url = true
+projectlessWorkspaceRoot = 'C:\Users\fvegi\.codex'
+integratedTerminalShell = "powershell"
+ambient-suggestions-enabled = true
+enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "ultra", "persistent", "max"]
+
+[desktop.open-in-target-preferences]
+global = "systemDefault"
+
+[marketplaces.openai-bundled]
+source_type = "local"
+source = '\\?\C:\Users\fvegi\.codex\.tmp\bundled-marketplaces\openai-bundled'
+
+[marketplaces.openai-primary-runtime]
+source_type = "local"
+source = '\\?\C:\Users\fvegi\.cache\codex-runtimes\codex-primary-runtime\plugins\openai-primary-runtime'
+
+[plugins."codex-app-tools@openai-bundled"]
+enabled = true
+
+[plugins."unified-computer-use@openai-bundled"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[shell_environment_policy.set]
+USE_OMX_EXPLORE_CMD = "0"
+
+# ============================================================
+# oh-my-codex (OMX) Configuration
+# Managed by omx setup - manual edits preserved on next setup
+# ============================================================
+
+# OMX-owned Codex hook trust state
+# Trusts only setup-managed native hook wrappers.
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:post_compact:0:0"]
+trusted_hash = "sha256:06d4b7f304fd892d88d76500dc9a737944ebad415a6a79629e04181ba1707522"
+
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:post_tool_use:0:0"]
+trusted_hash = "sha256:fbfc58b04f19bec54adc40ffbccffbd7a13e219a93796fcd5eae4bd3fe4543ec"
+
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:pre_compact:0:0"]
+trusted_hash = "sha256:49882798b2d5ad516fe01f0e6ab38325f50dfd04a8d87951f531c9484748f111"
+
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:pre_tool_use:0:0"]
+trusted_hash = "sha256:c0dcfa14490000bf7a2a14a50389fb3605fe8c27c850b902c7fd0ff5b31357e5"
+
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:session_start:0:0"]
+trusted_hash = "sha256:278072de9fd1581077d50b0f5404e19bf1f7661df3b14adae09e644e533a99a7"
+
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:stop:0:0"]
+trusted_hash = "sha256:49ab25774df05c561b57ef63ba46b73d2ab45da9ea72a79396ef5cb454949490"
+
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:user_prompt_submit:0:0"]
+trusted_hash = "sha256:299b0838ba1f8f798fa6a28aed2d16c294284eafc7ca2278fc8dca7fee6f99a2"
+# End OMX-owned Codex hook trust state
+
+# OMX TUI StatusLine (Codex CLI v0.101.0+)
+
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:pre_tool_use:1:0"]
+trusted_hash = "sha256:da650b4923783f4bfee56ba1700799e3c164bd7eee70b30ae47d0da6d2aa73b3"
+
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:permission_request:0:0"]
+trusted_hash = "sha256:7a930c3e3afcfcfe0430fdb4d995191839b320e074a6f7d536a5da3b7cdd09b3"
+
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:post_tool_use:1:0"]
+trusted_hash = "sha256:d635cdbdd58a22b990fcebae7b60c6e6d96fad33e112d6e42f106a7f80a6dc73"
+
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:pre_compact:1:0"]
+trusted_hash = "sha256:b5658ab218905fd45bdce0d8ab434de4a0b399ede2157e48e04000e68e7bbcf6"
+
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:post_compact:1:0"]
+trusted_hash = "sha256:752f5ef4c7353bcd1a78071f1a888e71fa890907d61905e2bc99916fb894127b"
+
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:session_start:1:0"]
+trusted_hash = "sha256:3974224b971920d40a74cbcb14308d5ec9b507b87e0669fe5fc9e8b9bf7e282e"
+
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:user_prompt_submit:1:0"]
+trusted_hash = "sha256:c18b73df8578991e512ac427d17ba50c9237866df0fc0f860194858ccbc9b532"
+
+[hooks.state."C:\\Users\\fvegi\\.codex\\hooks.json:stop:1:0"]
+trusted_hash = "sha256:1acb04ce438f6f11236d4fe3870d53120ffd911647a165b1cacbab8b9290649c"
+[tui]
+# omx:managed-status-line
+status_line = ["model-with-reasoning", "git-branch", "context-remaining", "total-input-tokens", "total-output-tokens", "five-hour-limit", "weekly-limit"]
+
+# ============================================================
+# End oh-my-codex
+
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 8
+
+[mcp_servers.gobby]
+command = "C:/Users/fvegi/.local/bin/gobby.exe"
+args = ["mcp-server"]
+
+# NVIDIA Personal AI Router (PAIR) - local/cloud model router, no auth needed locally.
+# Verified via process-to-port mapping (Get-NetTCPConnection + Get-Process):
+#   11434 = STANDALONE Ollama app (AppData\Local\Programs\Ollama\ollama.exe) - NOT PAIR.
+#   11435 = PAIR's raw managed Ollama engine (Nvidia Corporation\Personal AI Router\engine-bin\ollama\ollama.exe).
+#   11436 = PAIR's actual front-door proxy (C:\Program Files\PAIR\resources\cli-bin\ollama-proxy.exe) - use this one.
+# Verified endpoint http://127.0.0.1:11436/v1 responds to /v1/chat/completions and
+# /v1/responses for both local models (e.g. ornith:9b-q8_0) and cloud-routed models
+# (e.g. claude-sonnet-5:latest). Does NOT change the default model_provider;
+# invoke explicitly with `-c model_provider=pair -m <model>` or `--profile pair`.
+[model_providers.pair]
+name = "NVIDIA PAIR (local router)"
+base_url = "http://127.0.0.1:11436/v1"
+wire_api = "responses"
