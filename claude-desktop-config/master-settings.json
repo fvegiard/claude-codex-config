@@ -1,0 +1,340 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "deny": [
+      "AskUserQuestion"
+    ]
+  },
+  "model": "claude-opus-5",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=SessionStart",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "InstructionsLoaded": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=InstructionsLoaded",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=UserPromptSubmit",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=PreToolUse",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=PermissionRequest",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=PostToolUse",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=PostToolUseFailure",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "PermissionDenied": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=PermissionDenied",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=Notification",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=SubagentStart",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=SubagentStop",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "TaskCreated": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=TaskCreated",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "TaskCompleted": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=TaskCompleted",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\AppData\\Roaming\\uv\\tools\\gobby\\Scripts\\python.exe' 'C:\\Users\\fvegi\\.gobby\\hooks\\ghook_guard.py' -- 'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=Stop",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=StopFailure",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "TeammateIdle": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=TeammateIdle",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "ConfigChange": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=ConfigChange",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "CwdChanged": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=CwdChanged",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "FileChanged": [
+      {
+        "matcher": ".envrc|.env",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=FileChanged",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "WorktreeCreate": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=WorktreeCreate",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "WorktreeRemove": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=WorktreeRemove",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=PreCompact",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "PostCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=PostCompact",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=SessionEnd",
+            "timeout": 60
+          }
+        ]
+      }
+    ],
+    "Elicitation": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=Elicitation",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "ElicitationResult": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=ElicitationResult",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "'C:\\Users\\fvegi\\.gobby\\bin\\ghook.exe' --gobby-owned --cli=claude --type=statusline"
+  },
+  "enabledPlugins": {
+    "codex@openai-codex": true
+  },
+  "extraKnownMarketplaces": {
+    "openai-codex": {
+      "source": {
+        "source": "github",
+        "repo": "openai/codex-plugin-cc"
+      }
+    }
+  },
+  "outputStyle": "Concise",
+  "modelSettings": {
+    "claude-fable-5-1": {
+      "effortLevel": "high"
+    }
+  },
+  "advisorModel": "claude-fable-5-1",
+  "askUserQuestionTimeout": "60s",
+  "remote": {
+    "defaultEnvironmentId": "env_011CV6a86367tbdr2NfaZHUd"
+  },
+  "autoUpdatesChannel": "latest",
+  "tui": "fullscreen",
+  "timeFormat": "24-hour",
+  "skipDangerousModePermissionPrompt": true,
+  "verbose": true,
+  "remoteControlAtStartup": true,
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true
+}

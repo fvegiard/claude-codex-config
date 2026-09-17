@@ -1,0 +1,678 @@
+{
+	"updaterLastSeenVersion": "1.52386.0",
+	"first_launch_at": 1789254220039,
+	"version_first_launch": {
+		"version": "1.52386.0",
+		"at": 1789254214897
+	},
+	"locale": "en-US",
+	"dxt:allowlistEnabled:97691b58-2f6c-4b7c-b461-d3448b87ce20": false,
+	"dxt:allowlistLastUpdated:97691b58-2f6c-4b7c-b461-d3448b87ce20": "2026-09-17T18:31:48.419Z",
+	"dxt:allowlistCache:97691b58-2f6c-4b7c-b461-d3448b87ce20": "djEwaB6j3DV08lajAtTKkI3JX36R6t+OdUVh5Y9hvIwaql8g34K5o3wmZoBgGFdmafH9Sli8Mtp2MlZH7SLpKV9U0XPBQwJRb9bUTQu7vqjuLM4Dr4ctcUTweraLZRwI9BRE8rPpEWZZ7bxx2a5soBjci2rjQUYynRcPpK8bYdbyfpdhuVEXpskOx1OhStkm8c6IvDwvINPyiT8D5CvIbTdx7YLF45cvcU5E2I0qAVlIk8f99Fnk9gPJfdAy18ZRXxYPvWYQmO/F8Hhcvg90hNOykLBkVHeCG5Gs9MEiFX3wrAXxrj4dhoxYDKi1DMxORZ/wxfTMFm5FOrePAGZgH6nB9wUKCR69c5aGnbhP6mPzubxJQXH9XH42poYMbphRqo7L9YnlypJed8cdwgrdpl3AKcerNNq6WA==",
+	"bootFrameLayout": {
+		"sidebarWidth": 288,
+		"collapsed": false,
+		"narrowViewportMaxWidth": 700
+	},
+	"lastKnownAccountUuid": "39ff9a26-8b32-4706-bbfc-93057b014c6e",
+	"lastSeenRequireCoworkFullVmSandbox": null,
+	"oauth:tokenCache": "djEwmiQfc9+OL4dIGkiM5uds7rUtj/hJJLRjLuU8wa8N",
+	"oauth:tokenCacheV2": "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",
+	"hasTrackedInitialActivation": true,
+	"bootSidebarPlaceholder": [
+		{
+			"top": 48,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 9
+		},
+		{
+			"top": 50.5,
+			"left": 38,
+			"width": 28,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 75.5,
+			"left": 14,
+			"width": 16,
+			"height": 16,
+			"radius": 4
+		},
+		{
+			"top": 77,
+			"left": 38,
+			"width": 50.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 102,
+			"left": 14,
+			"width": 16,
+			"height": 16,
+			"radius": 4
+		},
+		{
+			"top": 103.5,
+			"left": 38,
+			"width": 54,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 128.5,
+			"left": 14,
+			"width": 16,
+			"height": 16,
+			"radius": 4
+		},
+		{
+			"top": 130,
+			"left": 38,
+			"width": 64,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 155,
+			"left": 14,
+			"width": 16,
+			"height": 16,
+			"radius": 4
+		},
+		{
+			"top": 155,
+			"left": 100.5,
+			"width": 30,
+			"height": 16,
+			"radius": 4
+		},
+		{
+			"top": 156.5,
+			"left": 38,
+			"width": 54.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 181.5,
+			"left": 14,
+			"width": 16,
+			"height": 16,
+			"radius": 4
+		},
+		{
+			"top": 183,
+			"left": 38,
+			"width": 42,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 208,
+			"left": 14,
+			"width": 16,
+			"height": 16,
+			"radius": 4
+		},
+		{
+			"top": 209.5,
+			"left": 38,
+			"width": 65,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 234.5,
+			"left": 14,
+			"width": 16,
+			"height": 16,
+			"radius": 4
+		},
+		{
+			"top": 236,
+			"left": 38,
+			"width": 32.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 283,
+			"left": 14,
+			"width": 39,
+			"height": 12,
+			"radius": 4
+		},
+		{
+			"top": 308,
+			"left": 14,
+			"width": 16,
+			"height": 16,
+			"radius": 4
+		},
+		{
+			"top": 309.5,
+			"left": 38,
+			"width": 237.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 335.5,
+			"left": 14,
+			"width": 16,
+			"height": 16,
+			"radius": 4
+		},
+		{
+			"top": 337,
+			"left": 38,
+			"width": 148,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 363,
+			"left": 14,
+			"width": 16,
+			"height": 16,
+			"radius": 4
+		},
+		{
+			"top": 364.5,
+			"left": 38,
+			"width": 233,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 390.5,
+			"left": 14,
+			"width": 16,
+			"height": 16,
+			"radius": 4
+		},
+		{
+			"top": 392,
+			"left": 38,
+			"width": 124.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 417,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 419.5,
+			"left": 38,
+			"width": 126,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 446.5,
+			"left": 15,
+			"width": 14,
+			"height": 14,
+			"radius": 4
+		},
+		{
+			"top": 447,
+			"left": 38,
+			"width": 237.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 472,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 474.5,
+			"left": 38,
+			"width": 182.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 517.5,
+			"left": 256.5,
+			"width": 16,
+			"height": 16,
+			"radius": 4
+		},
+		{
+			"top": 519.5,
+			"left": 14,
+			"width": 32.5,
+			"height": 12,
+			"radius": 4
+		},
+		{
+			"top": 546,
+			"left": 38,
+			"width": 25,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 549.5,
+			"left": 19,
+			"width": 6,
+			"height": 6,
+			"radius": 3
+		},
+		{
+			"top": 573.5,
+			"left": 38,
+			"width": 123.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 577,
+			"left": 19,
+			"width": 6,
+			"height": 6,
+			"radius": 3
+		},
+		{
+			"top": 600.5,
+			"left": 15,
+			"width": 14,
+			"height": 14,
+			"radius": 4
+		},
+		{
+			"top": 601,
+			"left": 38,
+			"width": 201,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 626,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 628.5,
+			"left": 38,
+			"width": 119.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 653.5,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 656,
+			"left": 38,
+			"width": 90,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 681,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 683.5,
+			"left": 38,
+			"width": 94,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 708.5,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 711,
+			"left": 38,
+			"width": 130,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 756,
+			"left": 14,
+			"width": 56,
+			"height": 12,
+			"radius": 4
+		},
+		{
+			"top": 780,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 782.5,
+			"left": 38,
+			"width": 122.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 807.5,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 810,
+			"left": 38,
+			"width": 175,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 837,
+			"left": 15,
+			"width": 14,
+			"height": 14,
+			"radius": 4
+		},
+		{
+			"top": 837.5,
+			"left": 38,
+			"width": 237.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 864.5,
+			"left": 15,
+			"width": 14,
+			"height": 14,
+			"radius": 4
+		},
+		{
+			"top": 865,
+			"left": 38,
+			"width": 237.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 890,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 892.5,
+			"left": 38,
+			"width": 150.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 937.5,
+			"left": 14,
+			"width": 35,
+			"height": 12,
+			"radius": 4
+		},
+		{
+			"top": 961.5,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 964,
+			"left": 38,
+			"width": 156.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 991,
+			"left": 15,
+			"width": 14,
+			"height": 14,
+			"radius": 4
+		},
+		{
+			"top": 991.5,
+			"left": 38,
+			"width": 237.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 1016.5,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 1019,
+			"left": 38,
+			"width": 122,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 1044,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 1046.5,
+			"left": 38,
+			"width": 111,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 1071.5,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 1074,
+			"left": 38,
+			"width": 157.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 1101,
+			"left": 15,
+			"width": 14,
+			"height": 14,
+			"radius": 4
+		},
+		{
+			"top": 1101.5,
+			"left": 38,
+			"width": 203.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 1126.5,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 1129,
+			"left": 38,
+			"width": 93,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 1154,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 1156.5,
+			"left": 38,
+			"width": 186.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 1181.5,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 1184,
+			"left": 38,
+			"width": 155,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 1209,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 1211.5,
+			"left": 38,
+			"width": 92.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 1236.5,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 1239,
+			"left": 38,
+			"width": 24.5,
+			"height": 13,
+			"radius": 4
+		},
+		{
+			"top": 1284,
+			"left": 14,
+			"width": 35.5,
+			"height": 12,
+			"radius": 4
+		},
+		{
+			"top": 1308,
+			"left": 13,
+			"width": 18,
+			"height": 18,
+			"radius": 4
+		},
+		{
+			"top": 1310.5,
+			"left": 38,
+			"width": 143,
+			"height": 13,
+			"radius": 4
+		}
+	],
+	"userThemeMode": "dark",
+	"planUsageLastTrayOpenAt": 1789669243421,
+	"remote_uploads_migration_done_v1_2d1ffd9aa39f": true,
+	"remote_marketplace_migration_done_v1": true,
+	"windowSizeWasSignedIn": true,
+	"terminalCliPowerShellPath": "C:\\Users\\fvegi\\.tools\\pwsh7\\pwsh.exe",
+	"quickWindowPosition": {
+		"absolutePointInWorkspace": {
+			"x": 733,
+			"y": 382
+		},
+		"monitor": {
+			"accelerometerSupport": "unknown",
+			"bounds": {
+				"x": 0,
+				"y": 0,
+				"width": 1920,
+				"height": 1200
+			},
+			"colorDepth": 24,
+			"colorSpace": "{primaries:BT709, transfer:SRGB, matrix:RGB, range:FULL}",
+			"depthPerComponent": 8,
+			"detected": true,
+			"displayFrequency": 75,
+			"id": 1878869972,
+			"internal": true,
+			"label": "NE18NZ2",
+			"maximumCursorSize": {
+				"width": 0,
+				"height": 0
+			},
+			"monochrome": false,
+			"nativeOrigin": {
+				"x": 0,
+				"y": 0
+			},
+			"rotation": 0,
+			"scaleFactor": 2,
+			"size": {
+				"width": 1920,
+				"height": 1200
+			},
+			"workArea": {
+				"x": 0,
+				"y": 0,
+				"width": 1920,
+				"height": 1152
+			},
+			"workAreaSize": {
+				"width": 1920,
+				"height": 1152
+			},
+			"touchSupport": "unknown"
+		},
+		"relativePointFromMonitor": {
+			"x": 733,
+			"y": 382
+		}
+	}
+}
