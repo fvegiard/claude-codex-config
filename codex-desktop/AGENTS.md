@@ -31,6 +31,8 @@ Mêmes faits que `C:\Users\fvegi\.claude\CLAUDE.md` (vérifiés le 17 septembre 
 8. Modèles : la table des capacités par rôle est générée par `omx setup` depuis `config.toml` — ne pas la maintenir à la main ; préférer `OMX_DEFAULT_FRONTIER_MODEL` / `OMX_DEFAULT_SPARK_MODEL` aux défauts devinés.
 9. Workflows `autopilot`, `ultraqa`, `team`, `ultragoal` exigent le runtime OMX (tmux). Hors tmux, expliquer l'indisponibilité et continuer avec la surface App-safe la plus proche. `$ralph`, `$ultrawork`, `$pipeline`, `ecomode`, `swarm` : retirés/dépréciés — ne pas router vers eux.
 10. Cleanup/refactor : plan d'abord, verrouiller le comportement par des tests de régression, préférer suppression/réutilisation aux nouvelles abstractions, aucune dépendance ajoutée sans demande explicite, puis lint/typecheck/tests avant de clamer la fin.
+11. ZÉRO FABRICATION DE CONFIG. Ne jamais inventer une clé de settings, un nom de package, un chemin de binaire ou une commande MCP. Avant d'écrire dans un fichier de config : (a) fetch la doc officielle de l'outil, (b) prouver que le chemin/paquet existe (`Test-Path`, `docker pull`, `npm view`), (c) écrire dans un temporaire, valider le JSON/TOML, puis remplacer atomiquement (`Move-Item`) avec backup horodaté. Un chemin non vérifié = un serveur MCP mort au démarrage.
+12. CONFIG ≠ COMPORTEMENT ≠ RUNTIME. Le fichier de config ne contient que du technique (chemins, serveurs MCP, env, permissions). Le comportement vit dans AGENTS.md/CLAUDE.md. Les réglages que Francis choisit dans l'UI — effort de raisonnement, modèle, thinking — ne sont jamais épinglés en dur dans les settings : ils appartiennent au sélecteur runtime.
 
 ## Interdictions
 

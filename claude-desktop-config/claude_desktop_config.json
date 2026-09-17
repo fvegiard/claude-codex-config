@@ -39,101 +39,24 @@
         "UV_MANAGED_PYTHON": "1"
       }
     },
-    "web-search": {
-      "command": "D:\\claude\\claude-desktop\\runtime\\node\\node.exe",
-      "args": [
-        "D:\\claude\\claude-desktop\\runtime\\pkgs\\node_modules\\web-search-mcp\\dist\\index.js"
-      ],
-      "env": {
-        "SEARCH_PROVIDER": "google",
-        "MAX_RESULTS": "10",
-        "DOCUMENTATION_FIRST": "true"
-      }
-    },
     "github": {
-      "command": "D:\\claude\\claude-desktop\\runtime\\node\\node.exe",
+      "command": "docker",
       "args": [
-        "D:\\claude\\claude-desktop\\runtime\\pkgs\\node_modules\\@github-mcp\\cli\\dist\\index.js"
+        "run",
+        "-i",
+        "--rm",
+        "-p",
+        "127.0.0.1:8085:8085",
+        "-e",
+        "GITHUB_OAUTH_CALLBACK_PORT",
+        "ghcr.io/github/github-mcp-server"
       ],
       "env": {
-        "GITHUB_TOKEN": "${GITHUB_TOKEN}",
-        "ENABLE_WORKFLOWS": "true",
-        "ENABLE_ACTIONS": "true",
-        "ENABLE_PR_REVIEW": "true",
-        "ENABLE_ISSUE_TRIAGE": "true"
-      }
-    },
-    "gitlab": {
-      "command": "D:\\claude\\claude-desktop\\runtime\\node\\node.exe",
-      "args": [
-        "D:\\claude\\claude-desktop\\runtime\\pkgs\\node_modules\\@gitlab-mcp\\cli\\dist\\index.js"
-      ],
-      "env": {
-        "GITLAB_URL": "http://localhost:8080",
-        "GITLAB_TOKEN": "${GITLAB_TOKEN}",
-        "ENABLE_CI_CD": "true",
-        "ENABLE_PIPELINES": "true"
-      }
-    },
-    "docker": {
-      "command": "D:\\claude\\claude-desktop\\runtime\\node\\node.exe",
-      "args": [
-        "D:\\claude\\claude-desktop\\runtime\\pkgs\\node_modules\\docker-mcp\\dist\\index.js"
-      ],
-      "env": {
-        "DOCKER_HOST": "npipe:////./pipe/docker_engine",
-        "ENABLE_COMPOSE": "true",
-        "ENABLE_REGISTRY": "true"
+        "GITHUB_OAUTH_CALLBACK_PORT": "8085"
       }
     }
   },
   "coworkUserFilesPath": "C:\\Users\\fvegi\\Claude",
-  "modelSettings": {
-    "claude-opus-5": {
-      "temperature": 1.0,
-      "topP": 1.0,
-      "thinking": {
-        "enabled": true,
-        "effort": "maximum",
-        "maxTokens": 16000
-      },
-      "reasoningEffort": "xhigh",
-      "documentation_mode": true,
-      "fetch_current_docs": true,
-      "disable_assumptions": true
-    },
-    "claude-fable-5-1": {
-      "temperature": 1.0,
-      "topP": 1.0,
-      "thinking": {
-        "enabled": true,
-        "effort": "maximum",
-        "maxTokens": 16000
-      },
-      "reasoningEffort": "xhigh",
-      "documentation_mode": true
-    }
-  },
-  "workflowSettings": {
-    "github": {
-      "autoReviewPRs": true,
-      "autoTriageIssues": true,
-      "cicdIntegration": true,
-      "fetchWorkflows": true,
-      "analyzeErrors": true
-    },
-    "gitlab": {
-      "enabled": true,
-      "autoReviewMRs": true,
-      "cicdIntegration": true,
-      "pipelineAnalysis": true
-    },
-    "docker": {
-      "containerManagement": true,
-      "imageAnalysis": true,
-      "composeSupport": true
-    }
-  },
   "preferences": {
     "coworkBrowserToolsEnabled": true,
     "coworkPreferredBrowser": "chrome",
@@ -189,9 +112,6 @@
     },
     "dockBounceEnabled": true,
     "coworkWebSearchEnabled": true,
-    "webSearchDocumentationMode": true,
-    "webSearchFetchCurrentDocs": true,
-    "webSearchDisableAssumptions": true,
     "coworkModelAutoFallbackByAccount": {
       "39ff9a26-8b32-4706-bbfc-93057b014c6e": true
     },
@@ -202,12 +122,6 @@
     "ccAutoArchiveOnPrClose": true,
     "ccAutoArchiveInactiveDays": 14,
     "ccRemoteControlDefaultEnabled": true,
-    "epithaxalMaxReasoningEffort": "xhigh",
-    "enabledReasoningLevels": ["low", "medium", "high", "xhigh", "ultra"],
-    "enhancedThinkingMode": true,
-    "gitHubWorkflowIntegration": true,
-    "gitLabCESupport": true,
-    "dockerIntegration": true,
     "epitaxyPrefs": {
       "desktop-frame.paneStore.v1": {
         "state": {
