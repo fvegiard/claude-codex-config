@@ -10,7 +10,7 @@
     "CODEX_USE_SYSTEM_GIT": "true",
     "CODEX_DEBUG": "true",
     "CODEX_LOG_LEVEL": "debug",
-    "CLAUDE_PLUGIN_DATA": "${HOME}/.claude/codex-state"
+    "CLAUDE_PLUGIN_DATA": "%USERPROFILE%\\.claude\\codex-state"
   },
   "permissions": {
     "defaultMode": "bypassPermissions"
