@@ -8,6 +8,8 @@
     "CODEX_PRESERVE_WORKSPACE": "true",
     "CODEX_ANALYSIS_MODE": "direct",
     "CODEX_USE_SYSTEM_GIT": "true",
+    "CODEX_DEBUG": "true",
+    "CODEX_LOG_LEVEL": "debug",
     "CLAUDE_PLUGIN_DATA": "${HOME}/.claude/codex-state"
   },
   "permissions": {
