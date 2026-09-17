@@ -21,6 +21,12 @@ Complete configuration snapshot for Claude Code CLI, Claude Desktop, and Codex p
 
 ### 3. Codex Plugin (codex-plugin/)
 - hooks.json - Codex lifecycle and review gate hooks
+- .codex.env - Master Codex environment configuration (create in home directory: `~/.codex.env` or `%USERPROFILE%\.codex.env` on Windows)
+
+**Windows Path Format:**
+- Use `%USERPROFILE%\.path\to\config` for environment variables in settings.json and .env files
+- Tilde expansion (`~`) is NOT supported in .env files on Windows
+- Shell variables like `${HOME}` only work in certain contexts; prefer `%USERPROFILE%` for Windows portability
 
 ## Latest Anthropic Model Lineup (Verified)
 
