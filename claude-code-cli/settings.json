@@ -1,28 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "env": {
-    "CODEX_WORK_IN_PLACE": "true",
-    "CODEX_NO_TEMP_REPOS": "true",
-    "CODEX_INLINE_ANALYSIS": "true",
-    "CODEX_SESSION_MODE": "inline",
-    "CODEX_PRESERVE_WORKSPACE": "true",
-    "CODEX_ANALYSIS_MODE": "direct",
-    "CODEX_USE_SYSTEM_GIT": "true",
-    "CODEX_DEBUG": "true",
-    "CODEX_LOG_LEVEL": "debug",
-    "CLAUDE_PLUGIN_DATA": "%USERPROFILE%\\.claude\\codex-state"
-  },
+  "env": {},
   "permissions": {
     "defaultMode": "bypassPermissions"
   },
   "model": "claude-opus-5",
   "enabledPlugins": {
     "codex@openai-codex": true
-  },
-  "codexConfig": {
-    "stopReviewGate": false,
-    "inlineAnalysis": true,
-    "workInPlace": true
   },
   "extraKnownMarketplaces": {
     "openai-codex": {
